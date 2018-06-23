@@ -1,0 +1,34 @@
+{
+  "name": "js-dev-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "airport": "babel-node ./airport",
+    "fazzBizzBarr": "babel-node ./fazz-bizz-barr",
+    "hexaBinaryConverter": "babel-node ./hexa-binary-converter/index",
+    "test-airport": "mocha --compilers js:babel-core/register ./airport/tests/**/*.spec.js",
+    "test-fazzBizzBarr": "mocha --compilers js:babel-core/register ./fazz-bizz-barr/tests/**/*.spec.js",
+    "test-hexaBinaryConverter": "mocha --compilers js:babel-core/register ./hexa-binary-converter/tests/**/*.spec.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bons/js-dev-test.git"
+  },
+  "author": "Bons",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bons/js-dev-test/issues"
+  },
+  "homepage": "https://github.com/bons/js-dev-test#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "chai": "^4.1.2",
+    "log-suppress": "^1.0.3",
+    "mocha": "^3.1.2",
+    "sinon": "^6.0.0",
+    "uuid": "^3.2.1"
+  }
+}
